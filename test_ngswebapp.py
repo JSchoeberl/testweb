@@ -19,8 +19,8 @@ def increment():
     draw()
 
 def draw():
-    gui.draw(ngs.sin(2*ngs.pi*f*ngs.x), mesh, deformation=True, scale=0.3)
-    gui2.draw(ngs.sin(2*ngs.pi*f*ngs.y), mesh, deformation=True, scale=0.3)    
+    gui.draw(ngs.sin(2*ngs.pi*f*ngs.x), mesh, deformation=True, scale=0.3, redraw=True)
+    gui2.draw(ngs.sin(2*ngs.pi*f*ngs.y), mesh, deformation=True, scale=0.3, redraw=True)    
 
 gui.on_mounted(draw)
 
