@@ -26,7 +26,7 @@ gui.on_mounted(draw)
 
 label = QBar("Joachim's first app")
 b1 = QBtn("Inc Button", ui_outline=True).on_click(increment)
-slider1 = QSlider(min=1, max=5)
+slider1 = QSlider("slide", min=1, max=5)
 
 component = Centered(Row(label, b1, slider1), Row(gui, gui2) )
 App(component)
