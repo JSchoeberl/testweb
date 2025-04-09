@@ -24,7 +24,7 @@ def draw():
 
 gui.on_mounted(draw)
 
-label = QBar("Joachim's first app")
+label = QBar("Joachim's first app 2")
 b1 = QBtn("Inc Button", ui_outline=True).on_click(increment)
 slider1 = QSlider("slide", min=1, max=5)
 
